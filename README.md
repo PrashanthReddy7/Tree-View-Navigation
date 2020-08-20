@@ -1,4 +1,4 @@
-# basf-wikinavigation-treeview
+# Wikinavigation-treeview
 
 ## Summary
 
