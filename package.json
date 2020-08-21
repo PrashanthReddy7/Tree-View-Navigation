@@ -1,5 +1,5 @@
 {
-  "name": "basf-wikinavigation-treeview",
+  "name": "wikinavigation-treeview",
   "version": "1.1.0",
   "private": true,
   "main": "lib/index.js",

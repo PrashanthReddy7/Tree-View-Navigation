@@ -7,6 +7,7 @@ import ReactWordcloud from 'react-wordcloud';
 import { select } from 'd3-selection';
 import 'd3-transition';
 import { IWikiPage } from "../../../data/IWikiPage";
+var spDomainUrl = "";
 
 function getCallback(callback) {
   return function (word, event) {
@@ -16,7 +17,7 @@ function getCallback(callback) {
     text
       .on('click', () => {
         if (isActive) {
-          window.open(`https://basfce1.sharepoint.com/teams/WikiReaderPOC/_layouts/15/search.aspx/siteall?q=${word.text}`, '_blank');
+          window.open(spDomainUrl + `/teams/WikiReaderPOC/_layouts/15/search.aspx/siteall?q=${word.text}`, '_blank');
         }
       })
       .transition()
@@ -62,10 +63,10 @@ export default class WikiPageTags extends React.Component<IWikiPageTagsProps, IW
     //var siteURL=${this.props.siteurl};
     debugger;
     jquery.ajax({
-      url: "https://basfce1.sharepoint.com/teams/WikiReaderPOC/_api/web/lists/getbytitle('site pages')/items?$select=Tags",
+      url: spDomainUrl+"/teams/WikiReaderPOC/_api/web/lists/getbytitle('site pages')/items?$select=Tags",
       type: "GET",
       headers: { 'Accept': 'application/json; odata=verbose;' },
-      success: function (resultData) {        
+      success: function (resultData) {
         var resultSet = resultData.d.results;
         var taggedKeyWords = [];
 

@@ -17,12 +17,12 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "BASF-WikiNavigation" },
-    "description": { "default": "BASF-WikiNavigation, apprears all wiki pages in tree view navigation, on selection Wiki Page Viewer shows the content." },
+    "title": { "default": "WikiNavigation" },
+    "description": { "default": "WikiNavigation, apprears all wiki pages in tree view navigation, on selection Wiki Page Viewer shows the content." },
     "officeFabricIconFontName": "GlobalNavButtonActive",
     "properties": {
       "wikiPage":"",
-      "title": "BASF-WikiNavigation"
+      "title": "WikiNavigation"
     }
   }]
 }

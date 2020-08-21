@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "BASF-Wiki Navigation-Wiki PageViewer",
+    "name": "Wiki Navigation-Wiki PageViewer",
     "id": "8fa40601-8b28-44eb-b8e8-cae217940d15",
     "version": "1.2.0.1",
     "includeClientSideAssets": true,
@@ -15,6 +15,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/BASF-WikiNavigation-WikiPageViewer.sppkg"
+    "zippedPackage": "solution/WikiNavigation-WikiPageViewer.sppkg"
   }
 }

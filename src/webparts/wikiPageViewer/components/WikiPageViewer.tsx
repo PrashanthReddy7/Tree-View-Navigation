@@ -17,7 +17,7 @@ export default class WikiPageViewer extends React.Component<IWikiPageViewerProps
   public render(): React.ReactElement<IWikiPageViewerProps> {
     const { displayMode, title, wikiPage, needsConfiguration, onConfigure, updateProperty } = this.props;
     const wikiData: IWikiPage | undefined = wikiPage.tryGetValue();
-    const siteURL = "https://basfce1.sharepoint.com/teams/WikiReaderPOC/SitePages/";
+    const siteURL = "/teams/WikiReaderPOC/SitePages/";
     var pageUrl = '';
     if (wikiData != null && wikiData != undefined)
       pageUrl = siteURL + wikiData + ".aspx";

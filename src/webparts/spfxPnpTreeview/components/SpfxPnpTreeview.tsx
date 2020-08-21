@@ -13,7 +13,7 @@ import "@pnp/sp/items";
 import { IContextInfo } from "@pnp/sp/sites";
 
 var treearr: ITreeItem[] = [];
-var spDomainUrl = "https://basfce1.sharepoint.com/";
+var spDomainUrl = "";
 
 function filterId(items, parentId) {
   var resultFound;
